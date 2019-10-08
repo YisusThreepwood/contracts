@@ -1,3 +1,6 @@
 micronaut:
   application:
     name: contracts
+
+data:
+  relativePath: data

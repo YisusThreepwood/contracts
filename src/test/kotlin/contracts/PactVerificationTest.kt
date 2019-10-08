@@ -17,8 +17,6 @@ import java.net.URL
 @Provider("Contracts")
 @PactFolder("pacts")
 class PactVerificationTest {
-    @TestTarget
-    val target: HttpTestTarget = HttpTestTarget("localhost", 8090)
 
     @TestTemplate
     @ExtendWith(PactVerificationInvocationContextProvider::class)
@@ -32,6 +30,7 @@ class PactVerificationTest {
     }
 
     @State("Get player's current contract")
-    fun testGetPayerCurrentContractInfo() {
+    fun testGetPayerCurrentContractInfo(params: Map<String, Object>) {
+        val aaa:String = ""
     }
 }
